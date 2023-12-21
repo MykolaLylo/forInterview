@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/aside.css">
+    <script src="https://kit.fontawesome.com/b0166f9752.js" crossorigin="anonymous"></script>
+    <title>Books store</title>
+</head>
+<body id="/">
+
+<header th:replace="/header.html::header"></header>
+<div class="main-container">
+    <aside th:replace="/aside.html::aside"></aside>
+    <main>
+        <div class="something-interesting">
+            <h2>Something interesting</h2>
+            <div class="slider">
+                <div class="img-container">
+                    <img src="/pictures/interestingOffers/interesting_offers_1.jpg">
+                    <img src="/pictures/interestingOffers/interesting_offers_2.jpg">
+                    <img src="/pictures/interestingOffers/interesting_offers_3.jpg">
+                    <img src="/pictures/interestingOffers/interesting_offers_4.jpg">
+                    <img src="/pictures/interestingOffers/interesting_offers_5.jpg">
+                    <img src="/pictures/interestingOffers/interesting_offers_6.jpg">
+                    <img src="/pictures/interestingOffers/interesting_offers_7.jpeg">
+                </div>
+            </div>
+            <div class="img-direction">
+                <button class="left-direction"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="right-direction"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="discounts">
+            <h2>Everything for you</h2>
+            <div class="sales-container">
+                <img src="/pictures/discounts/sale_1.avif" class="img-discount">
+                <img src="/pictures/discounts/sale_2.avif" class="img-discount">
+                <img src="/pictures/discounts/sale_3.jpg" class="img-discount">
+                <img src="/pictures/discounts/sale_4.webp" class="img-discount">
+                <img src="/pictures/discounts/sale_5.jpg" class="img-discount">
+            </div>
+        </div>
+    </main>
+    </div>
+</div>
+<footer th:replace="/footer.html::footer"></footer>
+<script src="/js/animationButtons.js"></script>
+<script src="/js/animationAccount.js"></script>
+</body>
+</html>

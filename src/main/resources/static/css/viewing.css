@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    height: 180vh;
+}
+.main-information{
+    display: flex;
+    width: 83vw;
+    height: 100vh;
+}
+.first-block{
+    width: 47vw;
+    height: 95vh;
+    padding: 20px 6px;
+    background-color: #b0afaf;
+    text-align: center;
+}
+.first-block img{
+    padding-top: 25px;
+    width: 40vw;
+    height: 60vh;
+}
+.second-block{
+    background-color: lightcyan;
+    width: 32vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 38px;
+}
+.second-block p{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.description{
+    display: flex;
+    width: 82vw;
+    font-size: medium;
+    height: 45vh;
+    padding: 10px 10px;
+}
+.description p{
+    font-size: medium;
+}
+.cartAdding{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+.cartAdding-submit{
+    width: 82vw;
+    height: 10vh;
+    background-color: green;
+    font-size: large;
+}
+.cartAdding-submit:hover{
+    cursor: pointer;
+    background-color: #009300;
+}
+.cartAdding-submit:active{
+    cursor: pointer;
+    background-color: #016501;
+}

@@ -1,0 +1,88 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    height: 180vh;
+}
+main{
+    background-image: url("../pictures/index_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    width: 85vw;
+}
+
+.something-interesting, .discounts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+h2{
+    color: coral;
+    font-size: xxx-large;
+    background-color: #314b4b;
+    font-family: "Baskerville Old Face", sans-serif;
+    padding: 5px;
+}
+.slider{
+    width:1372px;
+    height: 510px;
+    overflow: hidden;
+    background-color: burlywood;
+}
+.img-container{
+    width: auto;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+
+
+}
+.img-container img {
+    width: 343px;
+    height: 500px;
+    padding:5px;
+}
+.img-direction{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.img-direction .left-direction, .right-direction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    opacity: 0.5;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.25s;
+}
+.img-direction .left-direction:hover, .right-direction:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    transform:scale(1.1);
+}
+.sales-container{
+    width: 75vw;
+    height: 550px;
+    overflow: hidden;
+    padding: 5px;
+    background-color: burlywood;
+}
+.sales-container .img-discount{
+    width: 75vw;
+    height: 550px;
+}

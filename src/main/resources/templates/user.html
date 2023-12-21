@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <title>User page</title>
+    <link rel="stylesheet" href="/css/list.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/aside.css">
+    <script src="https://kit.fontawesome.com/b0166f9752.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header th:replace="/header.html::header"></header>
+<div class="main-container">
+    <aside th:replace="/aside.html::aside"></aside>
+    <div class="main-block">
+        <div class="list-block" style="align-items: center">
+            <div class="element-block">
+            <p th:text="${user.name}"></p>
+            <p th:text="${user.surname}"></p>
+            <p th:text="${user.email}"></p>
+            <p th:text="${user.roles}"></p>
+            <a th:href="@{/update_delete}" class="add-form">update/delete</a>
+            </div>
+        </div>
+</div>
+</div>
+<footer th:replace="/footer.html::footer"></footer>
+</body>
+</html>

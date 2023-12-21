@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Pacifico;
+    src: url("../fonts/Pacifico-Regular.ttf") format("truetype");
+    font-style: normal;
+}
+header{
+    background: linear-gradient(to right, #010325, rgba(14, 9, 47, 0.85));
+    height: 10vh;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+}
+
+.logo{
+    display: flex;
+    width: 150px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.25s;
+
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.logo::after{
+    font-family: Pacifico, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    content: "BOOK STORE";
+    color: rgb(246, 121, 18);
+}
+
+.logo-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    margin-right:10px ;
+}
+
+.search-form{
+    display: flex;
+    justify-content: flex-end;
+    width: 500px ;
+
+}
+.search{
+    color:#010325;
+    font-size: medium;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.search:focus{
+    background-color:#c7e0e8;
+    outline:double 2px #010325;
+}
+.search-button{
+    margin-left: 20px;
+    background:#c7e0e8;
+    color:#010325;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    transition: transform 0.25s;
+}
+
+.search-button:hover{
+    background-color: rgb(246, 121, 18);
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.search-button:active{
+    background-color: green;
+    color: #010325;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 400px;
+}
+.header-bucket{
+    color: #c7e0e8;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.25s;
+    margin-right: 25px;
+}
+.header-bucket:hover{
+    color: green;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.login{
+    background-color: #c7e0e8;
+    border: #010325 2px solid;
+    color: #010325;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: transform 0.25s;
+}
+.login:hover{
+    cursor: pointer;
+    background-color:rgb(246, 121, 18);
+    color: #c7e0e8;
+    transform: scale(1.1);
+}
+.login:active{
+    background-color: #010325;
+    color:#c7e0e8;
+    cursor: pointer;
+}
+.registration{
+    background-color: #010325;
+    border: #c7e0e8 2px solid;
+    color: #c7e0e8;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    transition: transform 0.25s;
+}
+.registration a, .login a{
+    text-decoration: none;
+    color: inherit;
+}
+.registration:hover{
+    background-color: green;
+    color: #c7e0e8;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.registration:active{
+    background-color: #c7e0e8;
+    color: #010325;
+     cursor: pointer;
+}
+.support{
+    color: #c7e0e8;
+    font-size: large;
+    transition: transform 0.25s;
+}
+.support:hover{
+    cursor: pointer;
+    color: #010325;
+    text-decoration: underline solid;
+    transform: scale(1.1);
+}

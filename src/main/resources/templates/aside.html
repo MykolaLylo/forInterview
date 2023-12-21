@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<aside class="left_sidebar">
+    <div class="category">category:</div>
+    <ul class="category-marker">
+        <li><a th:href="@{/books/category/fiction}">fiction</a></li>
+        <li><a th:href="@{/books/category/business}">business</a></li>
+        <li><a th:href="@{/books/category/self_development}">self development</a></li>
+        <li><a th:href="@{/books/category/for_children}">for children</a></li>
+        <li><a th:href="@{/books/category/fantasy}">fantasy</a></li>
+        <li><a th:href="@{/books/category/adventures}">adventures</a></li>
+        <li><a th:href="@{/books/category/biography}">biography</a></li>
+        <li><a th:href="@{/books/category/detective}">detective</a></li>
+        <li><a style="color: green" th:href="@{/books/category/IT}">IT</a></li>
+        <li><a th:href="@{/books/category/historical}">historical</a></li>
+    </ul>
+    <div ><a th:href="@{/books}" class="urls">Watch all books</a></div>
+    <div  sec:authorize="${hasAnyAuthority('ROLE_AUTHOR')}" ><a th:href="@{/myBooks}" class="urls">Watch my books</a></div>
+
+    <img src="/pictures/bookSale.jpg" class="book-sale-image">
+</aside>
+</body>
+</html>

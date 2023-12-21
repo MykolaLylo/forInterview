@@ -1,0 +1,100 @@
+footer{
+    height: max-content;
+    background-image: linear-gradient(to right, #1f1e1e, #464646);
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+footer h3{
+    color: indianred;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #314b4b;
+    width: max-content;
+}
+.find-us, .information, .cooperation, .contacts{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/5);
+}
+.find-us .address{
+    font-size: 20px;
+    color: #b0afaf;
+    display: flex;
+    flex-direction: column;
+}
+
+.information li, .cooperation li{
+    list-style: symbols(">");
+    font-size: 20px;
+    color: #b0afaf;
+    padding-bottom: 5px;
+}
+
+.information li:hover, .cooperation li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+}
+
+.contacts .social-networks{
+    display: flex;
+    font-size: 20px;
+    color: #b0afaf;
+    transition: transform 0.25s;
+    padding-bottom: 10px;
+
+}
+
+
+.social-networks img{
+    width: 50px;
+    height: 50px;
+    padding-right:8px;
+}
+
+.social-networks img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.telephones a{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #1f1e1e;
+    white-space: normal;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+.contacts a:hover{
+    text-decoration: underline;
+    color: #b0afaf;
+    cursor: pointer;
+}
+.gmail a{
+    font-size: 20px;
+    color:#1f1e1e;
+    white-space: normal;
+    text-decoration: none;
+}
+
+.up{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.5;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.25s;
+    align-self: end;
+}
+.up:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+}

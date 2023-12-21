@@ -1,0 +1,103 @@
+body{
+    background-color: #c7c6c6;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 100px;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "Candara Light", sans-serif;
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    margin-top: 15px;
+}
+
+input:focus{
+    outline: solid 1px #076ec0;
+    background-color: #d0faf8;
+}
+.registration{
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    margin-left: 50px;
+    background-color: #076ec0;
+    cursor: pointer;
+    color: white;
+}
+.have-account {
+    font-size: 20px;
+    color: #282828;
+    padding-top: 20px;
+}
+.have-account a{
+    text-decoration: none;
+    color: #076ec0;
+}
+
+.have-account a:hover{
+    cursor: pointer;
+    text-decoration: underline solid;
+    color: #282828;
+}
+.author-reg{
+    color: #076ec0;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.author-reg a{
+    text-decoration: none;
+    color: #282828;
+}
+.author-reg a:hover{
+    cursor: pointer;
+    color: #076ec0;
+    text-decoration: underline solid;
+}
+.error-massage{
+    visibility: hidden;
+    background-color: #fa2424;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 7px;
+    align-self: center;
+    position: relative;
+}
+
+.showPassword {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 220px;
+    right:0;
+
+}
+
+.showPassword input,.showConfirm input{
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+.showConfirm{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 80px;
+    right:0;
+}

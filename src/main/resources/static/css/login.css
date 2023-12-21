@@ -1,0 +1,86 @@
+body{
+    background-color: #c7c6c6;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 180px;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "Candara Light", sans-serif;
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    margin-top: 15px;
+}
+
+input:focus{
+    outline: solid 1px #076ec0;
+    background-color: #d0faf8;
+}
+.loginSubmit{
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    margin-left: 50px;
+    background-color: #076ec0;
+    cursor: pointer;
+    color: white;
+}
+.get-account {
+    font-size: 20px;
+    color: #282828;
+    padding-top: 20px;
+}
+.get-account a{
+    text-decoration: none;
+    color: #076ec0;
+}
+
+.get-account a:hover{
+    cursor: pointer;
+    text-decoration: underline solid;
+    color: #282828;
+}
+.author-log{
+    color: #076ec0;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.author-log a{
+    text-decoration: none;
+    color: #282828;
+}
+.author-log a:hover{
+    cursor: pointer;
+    color: #076ec0;
+    text-decoration: underline solid;
+}
+
+.showPassword {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 88px;
+    right:0;
+
+}
+
+.showPassword input{
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+
